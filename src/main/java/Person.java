@@ -1,9 +1,13 @@
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Сущьность - человек
  */
 
 public class Person {
 
+    private static final Map<Integer, Division> hashMapDivision = new HashMap<>();
     private Integer id;
     private String name;
     private String gender;
@@ -16,7 +20,10 @@ public class Person {
         this.name = listPerson[1];
         this.gender = listPerson[2];
         this.birtDate = listPerson[3];
-        this.outfit = new Division(listPerson[4]);
+        if (!hashMapDivision.containsKey(listPerson[4].hashCode())) {
+            hashMapDivision.put(listPerson[4].hashCode(), new Division(listPerson[4]));
+        }
+        this.outfit = hashMapDivision.get(listPerson[4].hashCode());
         this.salary = Integer.parseInt(listPerson[5]);
     }
 
