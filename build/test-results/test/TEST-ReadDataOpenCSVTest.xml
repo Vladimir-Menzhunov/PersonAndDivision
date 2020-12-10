@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ReadDataOpenCSVTest" tests="1" skipped="1" failures="0" errors="0" timestamp="2020-12-08T07:18:00" hostname="ARSTEL-10298" time="45.817">
-  <properties/>
-  <testcase name="testGetPersonLinkedList" classname="ReadDataOpenCSVTest" time="45.817">
-    <skipped/>
-  </testcase>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
